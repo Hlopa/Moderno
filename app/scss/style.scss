@@ -79,7 +79,7 @@
   &-title {
     font-size: 48px;
     margin-bottom: 10px;
-    font-weight: 700;
+    @include f700;
     line-height: 72px;
   }
   &-text {
@@ -99,7 +99,7 @@
       box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
       border-radius: 4px;
       border: none;
-      font-weight: 500;
+      @include f500;
       font-size: 14px;
       padding-left: 25px;
       padding-right: 60px;
@@ -136,21 +136,18 @@
     & + button {
       margin-left: 5px;
     }
-    &.mixitup-control-active{
+    &.mixitup-control-active {
       background-color: $red;
       color: #fff;
     }
   }
 }
 
-.products__inner-box{
+.products__inner-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
-
-
 
 .product__item {
   max-width: 442px;
@@ -169,7 +166,7 @@
     justify-content: space-between;
     padding: 10px 30px;
     align-items: center;
-    font-weight: 500;
+    @include f500;
     min-height: 90px;
     border-bottom: 1px solid #e7ecf2;
   }
@@ -192,7 +189,7 @@
   &-price {
     font-size: 20px;
     color: $bg;
-    font-weight: 700;
+    @include f700;
   }
 
   &-info {
@@ -216,26 +213,23 @@
       background-size: cover;
       background-position: center;
       margin-right: 14px;
-      
     }
-    span{
-    font-size: 14px;
-    font-weight: 500;
+    span {
+      font-size: 14px;
+      @include f500;
+    }
   }
-  }
-  &-star{
+  &-star {
     font-size: 12px;
-    span{
+    span {
       color: $bg;
     }
   }
-
 }
 
-
-.product__bottom-btn{
+.product__bottom-btn {
   text-align: center;
-  button{
+  button {
     margin: 40px 5px 0px;
     box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
     border: none;
@@ -243,33 +237,31 @@
     color: $bg;
     padding: 20px 30px;
     cursor: pointer;
-    &.mixitup-control-active{
+    &.mixitup-control-active {
       background-color: $red;
       color: #fff;
     }
   }
-  
 }
-
 
 //----------Product slider------//@extend
 
-.product-slider{
+.product-slider {
   padding: 110px 0px 120px;
-  .slick-dots{
+  .slick-dots {
     text-align: center;
     margin-top: 50px;
-    li{
+    li {
       display: inline-block;
       margin-right: 3px;
       margin-left: 3px;
-      &.slick-active{
-        button{
+      &.slick-active {
+        button {
           background-color: $green;
           outline: none;
         }
       }
-      button{
+      button {
         outline: none;
         cursor: pointer;
         font-size: 0;
@@ -278,8 +270,79 @@
         width: 16px;
         height: 16px;
         border-radius: 50%;
-        
       }
     }
+  }
+}
+
+//--------Advantages-------//
+
+.advantages {
+  background-color: $bg;
+  padding: 110px 0px;
+}
+
+.advantages__title {
+  color: #fff;
+}
+
+.advantages__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  max-width: 370px;
+  text-align: center;
+  padding: 0px 15px;
+
+  &:hover {
+    .advantages__item-images {
+      background-color: $green;
+      path {
+        fill: #fff;
+      }
+    }
+    .advantages__item-title {
+      color: $green;
+    }
+  }
+  &-images {
+    transition: all 0.3s;
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+  }
+  &-title {
+    transition: all 0.3s;
+    margin-bottom: 25px;
+    color: #fff;
+    @include f500;
+  }
+  &-text {
+    font-size: 15px;
+  }
+}
+
+.icosvg-1 {
+  svg {
+    width: 60px;
+  }
+}
+
+.icosvg-2 {
+  svg {
+    width: 75px;
+  }
+}
+
+.icosvg-3 {
+  svg {
+    width: 75px;
   }
 }
