@@ -347,10 +347,9 @@
   }
 }
 
-
 //-----Author----//
 
-.author{
+.author {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -358,8 +357,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  &__box{
+
+  &__box {
     max-width: 650px;
     width: 100%;
     background-color: $green;
@@ -368,22 +367,49 @@
     justify-content: center;
     align-items: center;
   }
-  &__title{
+  &__title {
     font-size: 30px;
     line-height: 30px;
     color: #fff;
     margin-right: 45px;
     max-width: 260px;
-    span{
+    span {
       @include f700;
     }
-
   }
-  &__link{
-     font-size: 18px;
-     line-height: 36px;
-     padding: 14px 40px;
-     background-color: #fff;
+  &__link {
+    font-size: 18px;
+    line-height: 36px;
+    padding: 14px 40px;
+    background-color: #fff;
   }
+}
 
+//-----Tutorial----//
+
+.tutorial {
+  padding: 70px 0px 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.tutorial__item {
+  max-width: 370px;
+  width: 100%;
+  &-images {
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &-title {
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 24px;
+    @include f700;
+    color: $bg;
+    padding: 30px 10px;
+  }
 }
