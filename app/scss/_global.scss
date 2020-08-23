@@ -59,6 +59,12 @@ body {
   font-weight: 700;
 }
 
+@mixin f300 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
