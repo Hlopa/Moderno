@@ -25,7 +25,8 @@ gulp.task ("style", function(){
         "node_modules/slick-carousel/slick/slick.css",
         "node_modules/magnific-popup/dist/magnific-popup.css",
         "app/rateyo/dist/jquery.rateyo.css",
-        "node_modules/ion-rangeslider/css/ion.rangeSlider.css"
+        "node_modules/ion-rangeslider/css/ion.rangeSlider.css",
+        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css"
     ])
     .pipe(concat("libs.min.css"))
     .pipe(cssmin())
@@ -40,7 +41,9 @@ gulp.task ("script", function(){
         "node_modules/magnific-popup/dist/jquery.magnific-popup.js",
         "node_modules/mixitup/dist/mixitup.js",
         "app/rateyo/dist/jquery.rateyo.js",
-        "node_modules/ion-rangeslider/js/ion.rangeSlider.js"
+        "node_modules/ion-rangeslider/js/ion.rangeSlider.js",
+        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"
+        
     ])
     .pipe(concat("libs.min.js"))
     .pipe(uglify())
